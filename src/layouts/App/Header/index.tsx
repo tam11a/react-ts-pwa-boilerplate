@@ -1,7 +1,7 @@
-const AppHeader = () => {
-  return (
-    <div>AppHeader</div>
-  )
-}
+import React from "react";
 
-export default AppHeader
+const AppHeader: React.FC = () => {
+	return <div>AppHeader</div>;
+};
+
+export default AppHeader;

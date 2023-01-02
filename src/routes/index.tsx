@@ -1,4 +1,4 @@
-import { Suspense, lazy } from "react";
+import React, { Suspense, lazy } from "react";
 
 // 3rd Party Modules
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -11,7 +11,7 @@ import { privateRoutes } from "./privateRoutes";
 const WebsiteLayout = lazy(() => import("@layouts/Website"));
 const AppLayout = lazy(() => import("@layouts/App"));
 
-const BaseRoutes = () => {
+const BaseRoutes: React.FC = () => {
 	return (
 		<Suspense fallback={<>Loading..</>}>
 			<BrowserRouter>

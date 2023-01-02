@@ -1,8 +1,7 @@
+import React from "react";
 
-const WebsiteFooter = () => {
-  return (
-    <div>WebsiteFooter</div>
-  )
-}
+const WebsiteFooter: React.FC = () => {
+	return <div>WebsiteFooter</div>;
+};
 
-export default WebsiteFooter
+export default WebsiteFooter;

@@ -1,7 +1,7 @@
-const WebsiteHeader = () => {
-  return (
-    <div>WebsiteHeader</div>
-  )
-}
+import React from "react";
 
-export default WebsiteHeader
+const WebsiteHeader: React.FC = () => {
+	return <div></div>;
+};
+
+export default WebsiteHeader;

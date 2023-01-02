@@ -24,6 +24,10 @@
 			"@components/*": ["src/components/*"]
 		}
   },
+  "types": [
+    "vite-plugin-pwa",
+    "vite-plugin-pwa/client"
+  ],
   "include": ["src"],
   "exclude": ["node_modules"],
   "references": [{ "path": "./tsconfig.node.json" }]
