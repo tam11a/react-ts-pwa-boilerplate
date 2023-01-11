@@ -1,10 +1,19 @@
-import React from "react";
+import React, { Suspense } from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App";
+
+// Styles
 import "@styles/tailwind.css";
+import "nprogress/nprogress.css";
+// import "antd/dist/reset.css";
+
+import NProgressSuspense from "@components/NProgressSuspense";
+
+const App = React.lazy(() => import("./App"));
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
-	<React.StrictMode>
+	// {/* <React.StrictMode> */}
+	<Suspense fallback={<NProgressSuspense />}>
 		<App />
-	</React.StrictMode>
+	</Suspense>
+	// {/* </React.StrictMode> */}
 );

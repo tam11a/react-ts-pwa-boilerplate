@@ -1,9 +1,9 @@
 export const PUBLIC_ROUTES = {
-	HOME: '/',
+	HOME: "",
+	NOTFOUND: "*",
 };
 
 export const PRIVATE_ROUTES = {
-	DASHBOARD: '',
-	SETTINGS: 'settings',
-	SETTINGS_PROFILE: 'settings/profile',
+	DASHBOARD: "",
+	NOTFOUND: "*",
 };

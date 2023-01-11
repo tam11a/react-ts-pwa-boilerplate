@@ -18,10 +18,12 @@
     "noUnusedLocals": true,
     "baseUrl": "./",
     "paths": {
-			"@pages/*": ["src/pages/*"],
-			"@styles/*": ["src/styles/*"],
-			"@layouts/*": ["src/layouts/*"],
-			"@components/*": ["src/components/*"]
+			"@pages/*": ["./src/pages/*"],
+			"@styles/*": ["./src/styles/*"],
+			"@layouts/*": ["./src/layouts/*"],
+			"@components/*": ["./src/components/*"],
+      "@/*": ["./src/*"]
+
 		}
   },
   "types": [
